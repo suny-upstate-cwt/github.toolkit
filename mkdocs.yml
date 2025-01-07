@@ -66,4 +66,7 @@ theme:
     - 'Home': 
       - 'index.md'
       - 'Repository': 'repo/index.md'
+    - 'Workflows':
+      - 'workflows/index.md'
+      - 'MkDocs GH Pages': 'workflows/mkdocs-gh-pages.md'
 

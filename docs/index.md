@@ -1,7 +1,5 @@
 # SUNY Upstate CWT GitHub Toolkit Documentation
 
-**NOTE: This content still needs review for accuracy**
-
 Welcome to the documentation for the SUNY Upstate CWT GitHub Toolkit. This documentation provides comprehensive information about our shared GitHub Actions workflows and how to use them effectively in your projects.
 
 ## What is the GitHub Toolkit?
@@ -17,28 +15,6 @@ To get started using our workflows in your repository:
 3. Add the workflow to your repository's `.github/workflows/` directory
 4. Configure any required parameters
 
-## Documentation Structure
-
-Our documentation is organized into the following sections:
-
-### Workflows
-- Detailed documentation for each available workflow
-- Setup instructions and configuration options
-- Examples and best practices
-- Troubleshooting guides
-
-### Guides
-- Step-by-step tutorials
-- Common use cases
-- Integration examples
-- Best practices
-
-### Reference
-- Configuration reference
-- GitHub Actions concepts
-- Security guidelines
-- Contributing guidelines
-
 ## Featured Workflows
 
 While we're actively developing our workflow collection, here are some key categories we're focusing on:
@@ -52,21 +28,11 @@ While we're actively developing our workflow collection, here are some key categ
 
 ## Support and Community
 
-We're here to help you successfully implement and use these workflows:
+To successfully implement and use these workflows:
 
-- Check our [Troubleshooting Guide](troubleshooting.md)
-- Review [Common Issues](common-issues.md)
+- View the documentation on [Github Pages](https://suny-upstate-cwt.github.io/github.toolkit)
 - Submit questions through [GitHub Issues](https://github.com/suny-upstate-cwt/github.toolkit/issues)
 - Contribute improvements through [Pull Requests](https://github.com/suny-upstate-cwt/github.toolkit/pulls)
-
-## Contributing
-
-We welcome contributions from our team members! See our [Contributing Guide](contributing.md) for details on:
-
-- How to submit changes
-- Documentation standards
-- Testing requirements
-- Code review process
 
 ## Getting Help
 
@@ -79,12 +45,7 @@ If you need assistance:
 ## Stay Updated
 
 - Watch the [GitHub repository](https://github.com/suny-upstate-cwt/github.toolkit) for updates
-- Check the [Changelog](changelog.md) for recent changes
-- Follow our [Release Notes](releases.md) for major updates
-
-## Security
-
-Security is our priority. Report security concerns directly to the repository maintainers and review our [Security Guidelines](security.md) for best practices.
+- Check the [Changelog](https://github.com/suny-upstate-cwt/github.toolkit/changelog.md) for recent changes
 
 ---
 
