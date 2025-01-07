@@ -2,7 +2,7 @@ site_name: SUNY Upstate CWT Github Repository
 site_description: The core repository that contains documentation, actions and templates for SUNY Upstate CWT github repositories.
 site_author: SUNY Upstate CWT
 copyright: SUNY Upstate CWT 2024
-repo_url: https://github.com/SUNY Upstate CWT/github.toolkit
+repo_url: https://github.com/suny-upstate-cwt/github.toolkit
 docs_dir: docs
 site_dir: site
 extra:
@@ -66,7 +66,4 @@ theme:
     - 'Home': 
       - 'index.md'
       - 'Repository': 'repo/index.md'
-    - 'Workflows':
-      - 'Overview': 'workflows/index.md'
-    - 'Actions':
-      - 'Overview': 'actions/index.md'
+
