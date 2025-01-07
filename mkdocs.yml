@@ -1,0 +1,72 @@
+site_name: SUNY Upstate CWT Github Repository
+site_description: The core repository that contains documentation, actions and templates for SUNY Upstate CWT github repositories.
+site_author: SUNY Upstate CWT
+copyright: SUNY Upstate CWT 2024
+repo_url: https://github.com/SUNY Upstate CWT/github.toolkit
+docs_dir: docs
+site_dir: site
+extra:
+    version: 0.1.0
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  # Mono Repo must come before search!
+  - monorepo
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+  - macros
+  - tags
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+    name: material
+    features:
+        - navigation.instant
+        - navigation.tracking
+        #- navigation.tabs
+        #- navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - content.tabs
+        - content.tabs.link
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+        - search.share
+    palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black 
+      accent: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black 
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+'nav':
+    - 'Home': 
+      - 'index.md'
+      - 'Repository': 'repo/index.md'
+    - 'Workflows':
+      - 'Overview': 'workflows/index.md'
+    - 'Actions':
+      - 'Overview': 'actions/index.md'
