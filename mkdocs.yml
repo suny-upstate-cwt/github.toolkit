@@ -10,8 +10,6 @@ extra:
 extra_css:
   - stylesheets/extra.css
 plugins:
-  # Mono Repo must come before search!
-  - monorepo
   - search
   - git-revision-date-localized:
       enable_creation_date: true
