@@ -1,0 +1,12 @@
+name: Build and Deploy MkDocs to gh-pages Branch
+
+on:
+  # Keep existing trigger for this repo
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-mkdocs-gh-pages:
+    # Open Source Workflow
+    uses: deepworks-net/github.toolkit/.github/workflows/flow.mkdocs-gh-pages.yml@v1

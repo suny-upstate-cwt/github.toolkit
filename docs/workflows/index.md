@@ -6,7 +6,7 @@ This section contains documentation for all available reusable workflows in the 
 
 ### Documentation Workflows
 
-- [MkDocs GitHub Pages Publisher](mkdocs-gh-pages.md) - Automates the process of building and deploying MkDocs documentation to GitHub Pages, including repository file integration.
+- [Build and Deploy MkDocs to gh-pages Branch](flows.mkdocs-gh-pages.md) - Automates the process of building and deploying MkDocs documentation to GitHub Pages, including repository file integration.
 
 ## Workflow Categories
 

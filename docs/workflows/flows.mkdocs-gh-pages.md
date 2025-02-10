@@ -1,4 +1,4 @@
-# MkDocs GitHub Pages Publisher
+# Build and Deploy MkDocs to gh-pages Branch Workflow
 
 This reusable workflow automates the process of building and deploying MkDocs documentation to GitHub Pages, while also incorporating key repository files (README, CHANGELOG, LICENSE) into the documentation structure.
 
@@ -19,7 +19,7 @@ The workflow handles:
 ### Basic Implementation
 
 ```yaml
-name: Deploy MkDocs
+name: Build and Deploy MkDocs to gh-pages Branch
 
 on:
   push:
@@ -27,14 +27,15 @@ on:
       - main
 
 jobs:
-  deploy_docs:
-    uses: suny-upstate-cwt/github.toolkit/.github/workflows/mkdocs-gh-pages.yml@main
+  generate-mkdocs-gh-pages:
+    # Open Source Workflow
+    uses: suny-upstate-cwt/github.toolkit/.github/workflows/flow.mkdocs-gh-pages.yml@v1
 ```
 
 ### Advanced Implementation
 
 ```yaml
-name: Deploy MkDocs
+name: Build and Deploy MkDocs to gh-pages Branch
 
 on:
   push:
@@ -42,8 +43,9 @@ on:
       - main
 
 jobs:
-  deploy_docs:
-    uses: suny-upstate-cwt/github.toolkit/.github/workflows/mkdocs-gh-pages.yml@main
+  generate-mkdocs-gh-pages:
+    # Open Source Workflow
+    uses: suny-upstate-cwt/github.toolkit/.github/workflows/flow.mkdocs-gh-pages.yml@v1
     with:
       python-version: '3.9'
       requirements-file: 'docs/requirements.txt'
