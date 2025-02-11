@@ -1,0 +1,11 @@
+name: Prepare Release
+
+on:
+    push:
+      tags:
+        - 'prep'  # Simple trigger
+
+jobs:
+  prepare-release:
+    uses: deepworks-net/github.toolkit/.github/workflows/core.action.version_calculator.yml@v1
+    #uses: deepworks-net/github.toolkit/.github/workflows/flow.prepare-release.yml@v1
