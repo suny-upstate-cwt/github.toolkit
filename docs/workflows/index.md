@@ -70,3 +70,4 @@ When using our reusable workflows:
 | Workflow | Status | Latest Version |
 |----------|---------|----------------|
 | MkDocs GitHub Pages | ✅ Active | v1 |
+| Prepare Release | 📋 Planned | v1 |

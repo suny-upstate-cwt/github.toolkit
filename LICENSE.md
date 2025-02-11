@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2024 SUNY Upstate Campus Web Technologies
+Copyright (c) 2024-2025 SUNY Upstate Campus Web Technologies
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
