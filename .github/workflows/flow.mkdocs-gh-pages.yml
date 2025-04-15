@@ -5,6 +5,49 @@ on:
   push:
     branches:
       - main
+  # Add workflow_call to make it reusable
+  workflow_call:
+    inputs:
+      python-version:
+        description: 'Python version to use'
+        default: '3.x'
+        required: false
+        type: string
+      requirements-file:
+        description: 'Path to requirements.txt'
+        default: 'requirements.txt'
+        required: false
+        type: string
+      readme-source:
+        description: 'Source path for README.md'
+        default: 'README.md'
+        required: false
+        type: string
+      readme-destination:
+        description: 'Destination path for README.md'
+        default: 'docs/repo/inc/README.md'
+        required: false
+        type: string
+      changelog-source:
+        description: 'Source path for CHANGELOG.md'
+        default: 'CHANGELOG.md'
+        required: false
+        type: string
+      changelog-destination:
+        description: 'Destination path for CHANGELOG.md'
+        default: 'docs/repo/inc/CHANGELOG.md'
+        required: false
+        type: string
+      license-source:
+        description: 'Source path for LICENSE.md'
+        default: 'LICENSE.md'
+        required: false
+        type: string
+      license-destination:
+        description: 'Destination path for LICENSE.md'
+        default: 'docs/repo/inc/LICENSE.md'
+        required: false
+        type: string
 
 jobs:
   generate-mkdocs-gh-pages:
