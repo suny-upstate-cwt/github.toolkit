@@ -39,17 +39,18 @@ on:
         required: false
         type: string
       license-source:
-        description: 'Source path for LICENSE.md'
-        default: 'LICENSE.md'
+        description: 'Source path for LICENSE'
+        default: 'LICENSE'
         required: false
         type: string
       license-destination:
-        description: 'Destination path for LICENSE.md'
-        default: 'docs/repo/inc/LICENSE.md'
+        description: 'Destination path for LICENSE'
+        default: 'docs/repo/inc/LICENSE'
         required: false
         type: string
 
 jobs:
-  generate-mkdocs-gh-pages:
-    # Open Source Workflow
+  deploy_gh_pages:
     uses: deepworks-net/github.toolkit/.github/workflows/flow.mkdocs-gh-pages.yml@v1
+    secrets:
+      github-token: ${{ secrets.SELF_TOKEN }}
